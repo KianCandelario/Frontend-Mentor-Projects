@@ -22,6 +22,9 @@ export default {
       fontFamily: {
         HankenGrotesk: ['HankenGrotesk', 'sans-serif'],
       },
+      dropShadow: {
+        '2xl':'0 25px 25px hsla(252, 100%, 67%, .20)',
+      },
     },
   },
   plugins: [],
