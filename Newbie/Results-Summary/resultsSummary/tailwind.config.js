@@ -19,6 +19,9 @@ export default {
         'violet-blue': 'hsla(256, 72%, 46%, 1)',
         'persian-blue': 'hsla(241, 72%, 46%, 0)'
       },
+      fontFamily: {
+        HankenGrotesk: ['HankenGrotesk', 'sans-serif'],
+      },
     },
   },
   plugins: [],
