@@ -14,7 +14,7 @@ function Summary() {
     return(
         <>
             <div className="font-bold mt-6 mb-9">
-                <div className="flex justify-between items-center mb-4 bg-light-red/5 p-3 rounded-lg text-light-red">
+                <div className="flex justify-between items-center mb-4 bg-light-red/5 p-3 text-light-red">
                     <div className="flex">
                         <img className="mr-3" src={path[0]} />
                         <p>{category[0]}</p>
