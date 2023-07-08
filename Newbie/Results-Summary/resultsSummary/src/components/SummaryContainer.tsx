@@ -3,7 +3,7 @@ import Summary from './Summary.tsx';
 function SummaryContainer() {
     return(
         <>
-            <div className='w-1/2 h-full mr-8 flex flex-col justify-center font-HankenGrotesk'>
+            <div className='ml-8 sm:w-1/2 h-full mr-8 flex flex-col justify-center font-HankenGrotesk'>
                 <div>
                     <div>
                         <h2 className='text-2xl font-bold text-dark-gray-blue'>Summary</h2>

@@ -3,7 +3,7 @@ import Circle from './Circle.tsx';
 function Result() {
     return(
         <>
-            <div className="w-3/5 h-full rounded-3xl bg-gradient-to-b from-light-slate-blue to-light-royal-blue flex flex-col justify-center items-center gap-1 font-HankenGrotesk">
+            <div className="py-5 rounded-b-3xl h-1/2 sm:w-3/5 sm:h-full sm:rounded-3xl bg-gradient-to-b from-light-slate-blue to-light-royal-blue flex flex-col justify-center items-center gap-1 font-HankenGrotesk">
                 <div className='font-semibold text-lg text-pale-blue'>
                     <h2>Your Result</h2>
                 </div>
