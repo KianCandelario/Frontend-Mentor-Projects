@@ -1,41 +1,53 @@
+import Data from '../data/data.json';
+
 function Summary() {
+    const category = Data.map(data => {
+        return data.category;
+    });
+    const score = Data.map(data => {
+        return data.score;
+    });
+    const path = Data.map(data => {
+        return data.icon;
+    });
+
     return(
         <>
             <div className="font-bold mt-6 mb-9">
                 <div className="flex justify-between items-center mb-4 bg-light-red/5 p-3 rounded-lg text-light-red">
                     <div className="flex">
-                        <img className="mr-3" src="../../assets/icons/icon-reaction.svg" />
-                        <p>Reaction</p>
+                        <img className="mr-3" src={path[0]} />
+                        <p>{category[0]}</p>
                     </div>
                     <div>
-                        <p className="text-dark-gray-blue">80  <span className="text-dark-gray-blue/50">/  100</span></p>
+                        <p className="text-dark-gray-blue">{score[0]}  <span className="text-dark-gray-blue/50">/  100</span></p>
                     </div>
                 </div>
                 <div className="flex justify-between items-center mb-4 bg-orangey-yellow/5 p-3 rounded-lg text-orangey-yellow">
                     <div className="flex">
-                        <img className="mr-3" src="../../assets/icons/icon-memory.svg" />
-                        <p>Memory</p>
+                        <img className="mr-3" src={path[1]} />
+                        <p>{category[1]}</p>
                     </div>
                     <div>
-                        <p className="text-dark-gray-blue">92  <span className="text-dark-gray-blue/50">/  100</span></p>
+                        <p className="text-dark-gray-blue">{score[1]}  <span className="text-dark-gray-blue/50">/  100</span></p>
                     </div>
                 </div>
                 <div className="flex justify-between items-center mb-4 bg-green-teal/5 p-3 rounded-lg text-green-teal">
                     <div className="flex">
-                        <img className="mr-3" src="../../assets/icons/icon-verbal.svg" />
-                        <p>Verbal</p>
+                        <img className="mr-3" src={path[2]} />
+                        <p>{category[2]}</p>
                     </div>
                     <div>
-                        <p className="text-dark-gray-blue">61  <span className="text-dark-gray-blue/50">  /100</span></p>
+                        <p className="text-dark-gray-blue">{score[2]}  <span className="text-dark-gray-blue/50">  /100</span></p>
                     </div>
                 </div>
                 <div className="flex justify-between items-center bg-cobalt-blue/5 p-3 rounded-lg text-cobalt-blue">
                     <div className="flex">
-                        <img className="mr-3" src="../../assets/icons/icon-visual.svg" />
-                        <p>Visual</p>
+                        <img className="mr-3" src={path[3]} />
+                        <p>{category[3]}</p>
                     </div>
                     <div>
-                        <p className="text-dark-gray-blue">72  <span className="text-dark-gray-blue/50">/  100</span></p>
+                        <p className="text-dark-gray-blue">{score[3]}  <span className="text-dark-gray-blue/50">/  100</span></p>
                     </div>
                 </div>
             </div>
