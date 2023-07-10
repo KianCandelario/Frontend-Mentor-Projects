@@ -18,7 +18,7 @@ function Contents() {
                     </div>
                 </div>
                 <Rating />
-                <button className='w-full py-3 bg-orange text-white text-sm rounded-full tracking-widest'>SUBMIT</button>
+                <button className='w-full py-3 bg-orange text-white text-sm rounded-full tracking-widest font-bold active:bg-white active:text-orange ease-in-out duration-300'>SUBMIT</button>
             </div>
         </>
     );
