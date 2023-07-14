@@ -35,7 +35,6 @@ Users should be able to:
 ### Built with
 
 - Flexbox
-- Mobile-first workflow
 - [React](https://react.dev/) - JS library
 - [Tailwind CSS](https://styled-components.com/) - For styles
 
