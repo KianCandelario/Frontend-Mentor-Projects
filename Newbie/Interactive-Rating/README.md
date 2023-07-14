@@ -25,17 +25,17 @@ Users should be able to:
 - Select and submit a number rating
 - See the "Thank you" card state after submitting a rating
 
-### Screenshot
+### Screenshots
 
-- Desktop
+- Desktop <br />
 ![Desktop Design](./interactiveRating/public/design/desktop-design.png)
 ![Desktop Submitted](./interactiveRating/public/design/desktop-thankyou-state.png)
 
-- Mobile
+- Mobile <br />
 ![Mobile Design](./interactiveRating/public/design/mobile-design.png)
 ![Mobile Submitted](./interactiveRating/public/design/mobile-thankyou-state.png)
 
-- Interactive Elements
+- Interactive Elements <br />
 ![Hover](./interactiveRating/public/design/hover-number.png)
 ![Select](./interactiveRating/public/design/selected-number.png)
 ![Submit](./interactiveRating/public/design/active-button.png)
@@ -89,7 +89,7 @@ The concept(s) that I'm still not completely comfortable with:
 
 ### Useful resources
 
-- [Conditional Rendering YT Tutorial](https://www.youtube.com/watch?v=4oCVDkb_EIs&t=296s) - This video helped me to understand the concept of conditional rendering in React. I'd recommend it to anyone who wants to use it and still learning the concept.
+- [Conditional Rendering YT Tutorial](https://www.youtube.com/watch?v=4oCVDkb_EIs&t=296s) - This video helped me to understand the concept of conditional rendering in React. I'd recommend it to anyone who wants to use it but still learning the concept.
 - [Passing Props in React using Typescript](https://dev.to/mconner89/passing-props-in-react-using-typescript-20lm) - This helped me understand how to use 'type' in Typescript when passing props in React.
 
 ## Author
