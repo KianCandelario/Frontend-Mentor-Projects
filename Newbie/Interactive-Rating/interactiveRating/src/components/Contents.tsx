@@ -29,7 +29,7 @@ function Contents() {
                         <button className={`h-11 w-11 bg-medium-grey/20 rounded-full hover:bg-light-grey hover:text-white active:bg-orange active:text-white ease-in duration-300 ${activeIndex === 4 ? 'bg-orange text-white' : ''}`} onClick={() => setActiveIndex(4)}>4</button>
                         <button className={`h-11 w-11 bg-medium-grey/20 rounded-full hover:bg-light-grey hover:text-white active:bg-orange active:text-white ease-in duration-300 ${activeIndex === 5 ? 'bg-orange text-white' : ''}`} onClick={() => setActiveIndex(5)}>5</button>
                     </div>
-                    <button className='w-full py-3 bg-orange text-white text-sm rounded-full tracking-widest font-bold active:bg-white active:text-orange ease-in-out duration-300' onClick={() => setSubmitted(true)}>SUBMIT</button>
+                    <button className='w-full py-3 bg-orange text-white text-sm rounded-full tracking-widest font-bold active:bg-white active:text-orange ease-in-out duration-300' onClick={activeIndex > 0 ? () => setSubmitted(true) : () => alert('Please select a number for rating')}>SUBMIT</button>
                 </div>
                 : <Submitted rating={activeIndex} />
             }
