@@ -24,10 +24,13 @@ Users should be able to:
 
 ### Screenshots
 
-![Active State](./resultsSummary/public/design/active-states.png)
-
+- Desktop <br />
 ![Desktop Design](./resultsSummary/public/design/desktop-design.png)
 
+- Active state <br />
+![Active State](./resultsSummary/public/design/active-states.png)
+
+- Mobile <br />
 ![Mobile Design](./resultsSummary/public/design/mobile-design.png)
 
 ## My process
