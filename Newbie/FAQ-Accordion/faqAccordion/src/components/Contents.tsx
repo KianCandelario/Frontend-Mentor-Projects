@@ -3,7 +3,7 @@ function Contents() {
         <>
             <div className="w-full h-[85%] flex">
                 <div className="w-full h-full bg-white rounded-3xl p-5 font-kumbh-sans">
-                    <div className="text-3xl font-bold mt-28 flex justify-center items-center">
+                    <div className="text-3xl font-bold mt-28 mb-5 flex justify-center items-center">
                         <h1>FAQ</h1>
                     </div>
                     <div className="h-[55%] w-full text-xs overflow-y-auto">
