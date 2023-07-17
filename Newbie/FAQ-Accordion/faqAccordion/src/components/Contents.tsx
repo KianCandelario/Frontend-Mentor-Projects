@@ -1,4 +1,34 @@
+import { useState } from 'react';
+
 function Contents() {
+    const [i, setI] = useState<number | null>(null);
+
+    const contents = [
+        {
+            question: 'How many team members can I invite?',
+            answer: 'You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.'
+        }, {
+            question: 'What is the maximum file upload size',
+            answer: 'No more than 2GB. All files in your account must fit your allotted storage space.'
+        }, {
+            question: 'How do I reset my password?',
+            answer: 'Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.'
+        }, {
+            question: 'Can I cancel my subscription?',
+            answer: "Yes! Send us a message and we'll process your request no questions asked."
+        }, {
+            question: 'Do you provide additional support?',
+            answer: 'Chat and email support is available 24/7. Phone lines are open during normal business hours.'
+        }
+    ];
+
+    const clicked = (index: number | null) => {
+        if (i === index) {
+            return setI(null);
+        }
+        setI(index);
+    }
+
     return (
         <>
             <div className="w-full h-[85%] flex">
@@ -7,36 +37,27 @@ function Contents() {
                         <h1>FAQ</h1>
                     </div>
                     <div className="h-[55%] w-full text-xs overflow-y-auto">
-                        <div className="flex justify-between items-center py-5 border-b-2">
-                            <p>How many team members can I invite?</p>
-                            <span>
-                                <img src="./assets/icons/icon-arrow-down.svg" />
-                            </span>
-                        </div>
-                        <div className="flex justify-between items-center py-5 border-b-2">
-                            <p>What is the maximum file upload size?</p>
-                            <span>
-                                <img src="./assets/icons/icon-arrow-down.svg" />
-                            </span>
-                        </div>
-                        <div className="flex justify-between items-center py-5 border-b-2">
-                            <p>How do I reset my password?</p>
-                            <span>
-                                <img src="./assets/icons/icon-arrow-down.svg" />
-                            </span>
-                        </div>
-                        <div className="flex justify-between items-center py-5 border-b-2">
-                            <p>Can I cancel my subscription?</p>
-                            <span>
-                                <img src="./assets/icons/icon-arrow-down.svg" />
-                            </span>
-                        </div>
-                        <div className="flex justify-between items-center py-5 border-b-2">
-                            <p>Do you provide additional support?</p>
-                            <span>
-                                <img src="./assets/icons/icon-arrow-down.svg" />
-                            </span>
-                        </div>
+                        {
+                            contents.map((contents, index) => {
+                                return (
+                                    <>
+                                        <div className={
+                                            `flex justify-between items-center py-5 
+                                            ${index === i ? 'border-b-0' : 'border-b-2'}`} onClick={() => {
+                                             clicked(index)
+                                        }}>
+                                            <p className={`${index === i ? 'font-bold' : 'font-normal'}`}>{contents.question}</p>
+                                            <span className={index === i ? 'rotate-180' : 'rotate-0'}>
+                                                <img src="./assets/icons/icon-arrow-down.svg" />
+                                            </span>
+                                        </div>
+                                        <div className={
+                                            `text-dark-grayish-blue ${index === i ? 'block border-b-2 pb-5' : 'hidden border-b-0 pb-0'}`
+                                        }>{contents.answer}</div>                  
+                                    </>
+                                );
+                            })
+                        }
                     </div>
                 </div>
             </div>
