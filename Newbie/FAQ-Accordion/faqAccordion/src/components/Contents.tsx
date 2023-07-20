@@ -37,31 +37,29 @@ function Contents() {
     return (
         <>
             <div className="w-full h-[85%] flex">
-                <div className="w-full h-full bg-white rounded-3xl p-5 font-kumbh-sans lg:grid lg:grid-cols-5">
+                <div className="w-full h-full bg-white rounded-3xl p-5 font-kumbh-sans lg:grid lg:grid-cols-5 lg:z-10">
                     <div className="text-3xl font-bold mt-28 mb-5 flex justify-center items-center lg:col-start-3 lg:mt-5 lg:block lg:mb-0">
                         <h1>FAQ</h1>
                     </div>
-                    <div className="h-[55%] w-full text-xs overflow-y-auto lg:col-start-3 lg:col-span-3 lg:pr-10 xl:text-sm">
+                    <div className="h-[55%] w-full text-xs overflow-y-auto lg:col-start-3 lg:col-span-3 lg:pr-10 lg:h-[97%] xl:text-sm">
                         {
-                            contents.map((contents, index) => {
-                                return (
-                                    <>
-                                        <div key={contents.id} className={
-                                            `flex justify-between items-center py-5 lg:col-start-3
-                                            ${index === i ? 'border-b-0' : 'border-b-2'}`} onClick={() => {
-                                             clicked(index)
-                                        }}>
-                                            <p className={`${index === i ? 'font-bold' : 'font-normal'}`}>{contents.question}</p>
-                                            <span className={index === i ? 'rotate-180' : 'rotate-0'}>
-                                                <img src="./assets/icons/icon-arrow-down.svg" />
-                                            </span>
-                                        </div>
-                                        <div className={
-                                            `text-dark-grayish-blue lg:col-start-3 ${index === i ? 'block border-b-2 pb-5' : 'hidden border-b-0 pb-0'}`
-                                        }>{contents.answer}</div>                  
-                                    </>
-                                );
-                            })
+                            contents.map((content, index) => (
+                                <div key={content.id}>
+                                    <div className={
+                                        `flex justify-between items-center py-5 lg:col-start-3
+                                        ${index === i ? 'border-b-0' : 'border-b-2'}`} onClick={() => {
+                                        clicked(index)
+                                    }}>
+                                        <p className={`${index === i ? 'font-bold' : 'font-normal'}`}>{content.question}</p>
+                                        <span className={index === i ? 'rotate-180' : 'rotate-0'}>
+                                        <img src="./assets/icons/icon-arrow-down.svg" />
+                                        </span>
+                                    </div>
+                                <div className={
+                                    `text-dark-grayish-blue lg:col-start-3 ${index === i ? 'block border-b-2 pb-5' : 'hidden border-b-0 pb-0'}`
+                                    }>{content.answer}</div>
+                                </div>            
+                            ))
                         }
                     </div>
                 </div>
