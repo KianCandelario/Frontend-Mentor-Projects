@@ -1,7 +1,17 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import DesktopIcon from './DesktopIcon.tsx';
 
 function Contents() {
     const [i, setI] = useState<number | null>(null);
+    const [currWidth, setCurrWith] = useState(window.innerWidth);
+
+    const resized = () => {
+        setCurrWith(window.innerWidth);
+    }
+
+    useEffect(() => {
+        window.addEventListener('resized', resized);
+    }, []);
 
     const contents = [
         {
@@ -37,7 +47,12 @@ function Contents() {
     return (
         <>
             <div className="w-full h-[85%] flex">
-                <div className="w-full h-full bg-white rounded-3xl p-5 font-kumbh-sans lg:grid lg:grid-cols-5 lg:z-10">
+                <div className="w-full h-full bg-white rounded-3xl p-5 font-kumbh-sans lg:grid lg:grid-cols-5">
+                    {currWidth > 1024 ? 
+                        <div className='col-start-1 col-span-2'>
+                            <DesktopIcon />
+                        </div>
+                    : ''}
                     <div className="text-3xl font-bold mt-28 mb-5 flex justify-center items-center lg:col-start-3 lg:mt-5 lg:block lg:mb-0">
                         <h1>FAQ</h1>
                     </div>
