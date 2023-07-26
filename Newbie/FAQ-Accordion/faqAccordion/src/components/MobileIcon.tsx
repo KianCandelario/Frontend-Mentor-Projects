@@ -6,7 +6,7 @@ function MobileIcon() {
                     <div className="z-10 h-60 w-60">
                         <img src="./assets/icons/illustration-woman-online-mobile.svg" />
                     </div>
-                    <div className="z-0 h-60 w-60 absolute top-[48%]">
+                    <div className="z-0 h-56 w-56 absolute top-[46%] sm:h-60 sm:w-60 sm:top-[47%]">
                         <img src="./assets/icons/bg-pattern-mobile.svg" />
                     </div>
                 </div>
