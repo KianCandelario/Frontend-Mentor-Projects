@@ -11,6 +11,10 @@ function Container() {
 
   useEffect(() => {
     window.addEventListener('resize', resized);
+
+    return () => {
+      window.removeEventListener('resize', resized);  // Cleanup
+    }
   }, []);
 
   return (
