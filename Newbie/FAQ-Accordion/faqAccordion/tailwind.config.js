@@ -17,6 +17,11 @@ export default {
       },
       fontFamily: {
         'kumbh-sans' : ['Kumbh Sans', 'sans-serif']
+      },
+      screens: {
+        'xsm': '390px',
+        'xlg' : '1095px',
+        'axl' : '1170px'
       }
     },
   },
