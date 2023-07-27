@@ -9,7 +9,11 @@ function Contents() {
     }
 
     useEffect(() => {
-        window.addEventListener('resized', resized);
+        window.addEventListener('resize', resized);
+
+        return () => {
+            window.removeEventListener('resize', resized);  // Cleanup
+        }
     }, []);
 
     const contents = [
@@ -46,20 +50,20 @@ function Contents() {
     return (
         <>
             <div className="w-full h-[85%] flex">
-                <div className="w-full h-full bg-white rounded-3xl font-kumbh-sans lg:grid lg:grid-cols-6 lg:overflow-x-hidden">
+                <div className="w-full h-full bg-white rounded-3xl font-kumbh-sans lg:grid lg:grid-cols-6 lg:overflow-x-hidden ">
                     {currWidth >= 1024 ? 
                         <div className='col-start-1 col-span-3 row-span-2 bg-[right_.5em_bottom_-11em] bg-no-repeat mr-16' style={
                             {backgroundImage: "url(../assets/icons/bg-pattern-desktop.svg)"}
                         }>
-                            <div className='relative h-auto w-[22rem] top-[19%] left-[-18%]'>
+                            <div className='relative h-auto w-[22rem] top-[19%] left-[-18%] xlg:w-[24rem] xlg:top-[14%] axl:w-[25.4rem] axl:top-[12%]'>
                                 <img src="../assets/icons/illustration-woman-online-desktop.svg" />
                             </div>
-                            <div className='absolute top-[18.7rem] left-[5rem] w-36 h-auto'>
-                                    <img src="../assets/icons/illustration-box-desktop.svg" />
+                            <div className='absolute top-[18.6rem] left-[5rem] w-36 h-auto drop-shadow-2xl xlg:left-[5.8rem] axl:left-[6.3rem] axl:top-[18.7rem]'>
+                                <img src="../assets/icons/illustration-box-desktop.svg" />
                             </div>
                         </div>
                     : ''}
-                    <div className="text-3xl font-bold mt-32 mb-5 flex justify-center items-center lg:col-start-4 lg:mt-10 lg:block lg:mb-5">
+                    <div className="text-3xl font-bold mt-32 mb-5 flex justify-center items-center lg:col-start-4 lg:mt-10 lg:block">
                         <h1>FAQ</h1>
                     </div>
                     <div className="h-[50%] w-full text-xs overflow-y-auto px-5 lg:px-0 lg:col-start-4 lg:col-span-3 lg:pr-10 lg:h-[90%] xl:text-sm">
@@ -68,7 +72,7 @@ function Contents() {
                                 <div key={content.id}>
                                     <div className={
                                         `flex justify-between items-center py-5 lg:pb-5 lg:py-0 lg:col-start-3
-                                        ${index === i ? 'border-b-0' : 'border-b-2 mb-5'}`} 
+                                        ${index === i ? 'border-b-0' : 'border-b-2 lg:mb-5'}`} 
                                         onClick={() => {
                                         clicked(index)
                                     }}>
