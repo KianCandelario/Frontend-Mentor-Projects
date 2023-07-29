@@ -13,3 +13,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Hide the default scrollbar */
+::-webkit-scrollbar {
+    width: 0.5em;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+  
+/* Enable scrolling using the mouse wheel or touchpad */
+.scrollable-container {
+    overflow: auto;
+}
+  
+/* Enable scrolling using keyboard arrow keys or touch gestures */
+.scrollable-container:focus {
+    outline: none;
+}
+  
+/* Hide scrollbar for Firefox */
+.scrollable-container {
+    scrollbar-width: none;
+}
+  
