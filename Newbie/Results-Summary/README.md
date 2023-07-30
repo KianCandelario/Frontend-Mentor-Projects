@@ -39,7 +39,7 @@ Users should be able to:
 
 - Flexbox
 - [React](https://react.dev/) - JS library
-- [Tailwind CSS](https://styled-components.com/) - For styles
+- [TailwindCSS](https://styled-components.com/) - For styles
 
 ### What I learned
 
