@@ -34,8 +34,8 @@ Users should be able to:
 
 - Interactive Elements <br />
   ![Active State (Mobile)](./faqAccordion/public/design/mobile_active.png)
-  ![Active State (Desktop)](./faqAccordion/public/design/desktop_active.png)
   ![Hover (Desktop)](./faqAccordion/public/design/hover_state.png)
+  ![Active State (Desktop)](./faqAccordion/public/design/desktop_active.png)
 
 ## My process
 
