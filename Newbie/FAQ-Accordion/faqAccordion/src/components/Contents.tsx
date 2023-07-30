@@ -75,7 +75,7 @@ function Contents() {
                                     }}>
                                         <p className={`${index === i ? 'font-bold' : 'font-normal'} hover:text-soft-red hover:cursor-pointer`}>{content.question}</p>
                                         <span className={index === i ? 'rotate-180' : 'rotate-0'}>
-                                        <img src="./assets/icons/icon-arrow-down.svg" />
+                                        <img src="../../src/assets/icons/icon-arrow-down.svg" />
                                         </span>
                                     </div>
                                     <div className={
