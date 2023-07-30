@@ -11,7 +11,7 @@ function Contents() {
                 <div className='px-5 font-overpass flex flex-col gap-4'>
                     <div>
                         <div className="bg-medium-grey/10 p-2 w-11 h-11 rounded-full flex justify-center items-center mb-2">
-                            <img src="../../assets/icons/icon-star.svg" />
+                            <img src="../../src/assets/icons/icon-star.svg" />
                         </div>
                     </div>
                     <div>

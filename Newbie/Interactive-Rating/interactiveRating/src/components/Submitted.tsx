@@ -7,7 +7,7 @@ function Submitted(props: Rating) {
         <>
             <div className="flex flex-col justify-center items-center font-overpass px-4">
                 <div>
-                    <img src="../assets/icons/illustration-thank-you.svg" />
+                    <img src="../../src/assets/icons/illustration-thank-you.svg" />
                 </div>
                 <div className="bg-medium-grey/20 text-orange/80 py-2 px-3 my-5 text-xs rounded-full">
                     <p>You selected {props.rating} out of 5</p>
