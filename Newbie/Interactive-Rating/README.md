@@ -91,7 +91,7 @@ The concept(s) that I'm still not completely comfortable with:
 
 - [Conditional Rendering YT Tutorial](https://www.youtube.com/watch?v=4oCVDkb_EIs&t=296s) - This video helped me to understand the concept of conditional rendering in React. I'd recommend it to anyone who wants to use it but still learning the concept.
 - [Passing Props in React using Typescript](https://dev.to/mconner89/passing-props-in-react-using-typescript-20lm) - This helped me understand how to use 'type' in Typescript when passing props in React.
-- [Mobile-first Workflow YT Tutorial](https://youtu.be/NeThtWARdnY) - This video tutorial served as my reference on how to effectively deal with mobile-first workflows.
+- [Mobile-first Workflow YT Tutorial](https://youtu.be/NeThtWARdnY) - This video served as my reference on how to effectively deal with mobile-first workflows.
 
 ## Author
 - LinkedIn - [Kian Candelario](https://www.linkedin.com/in/kian-candelario-11440a240/)
