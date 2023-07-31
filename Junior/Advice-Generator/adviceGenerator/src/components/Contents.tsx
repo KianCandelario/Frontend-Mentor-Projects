@@ -13,7 +13,7 @@ function Contents() {
                 <div className="my-5">
                     <img src="../../src/assets/icons/pattern-divider-mobile.svg" />
                 </div>
-                <div className="bg-neon-green p-4 rounded-full mt-3">
+                <div className="bg-neon-green p-4 rounded-full mt-3 shadow-2xl">
                     <img src="../../src/assets/icons/icon-dice.svg" />
                 </div>
             </div>
