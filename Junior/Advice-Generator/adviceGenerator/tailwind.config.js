@@ -19,6 +19,9 @@ export default {
       fontSize: {
         'desk-quote' : '28px',
         'mobile-quote' : '23px'
+      },
+      dropShadow: {
+        'green-glow': '0 15px 20px rgba(82, 255, 168, 0.60 )'
       }
     },
   },
