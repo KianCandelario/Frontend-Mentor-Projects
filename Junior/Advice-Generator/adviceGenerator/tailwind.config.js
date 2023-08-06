@@ -17,7 +17,8 @@ export default {
         'manrope' : ['manrope','sans-serif']
       },
       fontSize: {
-        'quote' : '28px'
+        'desk-quote' : '28px',
+        'mobile-quote' : '23px'
       }
     },
   },
