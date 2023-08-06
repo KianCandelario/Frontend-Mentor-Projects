@@ -28,20 +28,22 @@ function Contents() {
 
     return (
         <>
-            <div className="w-full h-full flex flex-col items-center">
-                <div className="font-manrope text-neon-green text-xs tracking-[.25rem] mt-10 mb-5">
-                    <h4>Advice #{adviceNum}</h4>
+            <div className="w-full h-full">
+                <div className="h-[15%] font-manrope text-neon-green text-xs tracking-[.25rem] flex justify-center items-end">
+                    <h4>ADVICE #{adviceNum}</h4>
                 </div>
-                <div className="text-light-cyan font-manrope text-[23px] text-center px-5">
-                    <q>
+                <div className="h-[55%] text-light-cyan font-manrope text-[23px] text-center px-5 my-3 flex justify-center items-center">
+                    <q className='text-mobile-quote'>
                         {advice}
                     </q>
                 </div>
-                <div className="my-5">
+                <div className="h-[13%] flex justify-center items-start">
                     <img src="../../src/assets/icons/pattern-divider-mobile.svg" />
                 </div>
-                <div className="bg-neon-green p-4 rounded-full mt-3 shadow-2xl" onClick={() => setClicked(!clicked)}>
-                    <img src="../../src/assets/icons/icon-dice.svg" />
+                <div className='flex justify-center items-center'>
+                    <div className="z-10 bg-neon-green p-4 rounded-full shadow-2xl" onClick={() => setClicked(!clicked)}>
+                        <img src="../../src/assets/icons/icon-dice.svg" />
+                    </div>
                 </div>
             </div>
         </>
