@@ -22,6 +22,9 @@ export default {
       },
       dropShadow: {
         'green-glow': '0 15px 20px rgba(82, 255, 168, 0.60 )'
+      },
+      screens: {
+        'xmd' : '885px'
       }
     },
   },
