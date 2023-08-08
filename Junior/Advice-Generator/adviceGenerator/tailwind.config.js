@@ -21,7 +21,7 @@ export default {
         'mobile-quote' : '23px'
       },
       dropShadow: {
-        'green-glow': '0 15px 20px rgba(82, 255, 168, 0.60 )'
+        'green-glow': '0 10px 20px rgba(82, 255, 168, 0.70 )'
       },
       screens: {
         'xmd' : '885px'
