@@ -28,13 +28,13 @@ Users should be able to:
 
 ### Screenshots
 
-- Mobile Design
+- Mobile Design <br />
 ![Mobile Design](./adviceGenerator/public/design/mobile_design.png)
 
-- Desktop Design
+- Desktop Design <br />
 ![Desktop Design](./adviceGenerator/public/design/desktop_design.png)
 
-- Interactive Elements
+- Interactive Elements <br />
 ![Hover State](./adviceGenerator/public/design/hover_state.png)
 
 ## My process
