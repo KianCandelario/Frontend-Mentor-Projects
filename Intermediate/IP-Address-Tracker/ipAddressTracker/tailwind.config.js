@@ -12,6 +12,9 @@ export default {
       },
       fontFamily: {
         'rubik' : ['Rubik','sans-serif']
+      },
+      fontSize: {
+        'txt-input' : '18px'
       }
     },
   },
