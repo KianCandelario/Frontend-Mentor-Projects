@@ -1,5 +1,5 @@
 function Head() {
-    return(
+    return (
         <>
             <div style={{
                 backgroundImage: 'url(../../src/assets/images/pattern-bg-mobile.png)'
