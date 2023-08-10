@@ -1,5 +1,6 @@
 import Head from './Head.tsx';
 import Card from './Card.tsx';
+import Map from './Map.tsx';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
           <Card />
         </div>
         <div className="h-[60%] w-full">
-
+          <Map />
         </div>
       </div>
     </>

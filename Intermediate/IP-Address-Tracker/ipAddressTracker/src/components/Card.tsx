@@ -1,7 +1,7 @@
 function Card() {
     return (
         <>
-            <div className="h-[19rem] w-[85%] bg-white absolute bottom-[-13rem] left-0 right-0 ml-auto mr-auto rounded-xl p-5">
+            <div className="z-10 h-[19rem] w-[85%] bg-white absolute bottom-[-13rem] left-0 right-0 ml-auto mr-auto rounded-xl p-5">
                 <div className="flex flex-col items-center">
                     <div className="text-dark-gray font-rubik font-bold tracking-widest text-xs mb-2">
                         <h4>IP ADDRESS</h4>
